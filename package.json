@@ -1,0 +1,32 @@
+{
+  "name": "spigotlangeditor",
+  "version": "1.0.0",
+  "description": "Editor for Bukkit/Spigot Language files (YAML)",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GreenSurvivors/SpigotLangEditor.git"
+  },
+  "keywords": [
+    "Bukkit",
+    "Spigot",
+    "Minecraft",
+    "color",
+    "code"
+  ],
+  "author": "Schpammer",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/GreenSurvivors/SpigotLangEditor/issues"
+  },
+  "homepage": "https://github.com/GreenSurvivors/SpigotLangEditor#readme",
+  "dependencies": {
+    "milligram": "^1.4.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

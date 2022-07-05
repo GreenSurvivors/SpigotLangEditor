@@ -1,0 +1,116 @@
+#config-field {
+    height: 20rem;
+}
+
+#preview {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* bukkit formats */
+
+/* black */
+.minecraft-color.mc-code-0 {
+    color: #000000;
+}
+
+/* dark blue */
+.minecraft-color.mc-code-1 {
+    color: #0000aa;
+}
+
+/* dark green */
+.minecraft-color.mc-code-2 {
+    color: #00aa00;
+}
+
+/* dark aqua */
+.minecraft-color.mc-code-3 {
+    color: #00aaaa;
+}
+
+/* dark red */
+.minecraft-color.mc-code-4 {
+    color: #aa0000;
+}
+
+/* dark purple */
+.minecraft-color.mc-code-5 {
+    color: #aa00aa;
+}
+
+/* gold */
+.minecraft-color.mc-code-6 {
+    color: #ffaa00;
+}
+
+/* gray */
+.minecraft-color.mc-code-7 {
+    color: #aaaaaa;
+}
+
+/* dark gray */
+.minecraft-color.mc-code-8 {
+    color: #555555;
+}
+
+/* blue */
+.minecraft-color.mc-code-9 {
+    color: #5555ff;
+}
+
+/* green */
+.minecraft-color.mc-code-a {
+    color: #55ff55;
+}
+
+/* aqua */
+.minecraft-color.mc-code-b {
+    color: #55ffff;
+}
+
+/* red */
+.minecraft-color.mc-code-c {
+    color: #ff5555;
+}
+
+/* light purple */
+.minecraft-color.mc-code-d {
+    color: #ff55ff;
+}
+
+/* yellow */
+.minecraft-color.mc-code-e {
+    color: #ffff55;
+}
+
+/* white */
+.minecraft-color.mc-code-f {
+    color: #ffffff;
+}
+
+.minecraft-color, .mc-code-r {
+    color: #ffffff;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+/* bold */
+.mc-code-l {
+    font-weight: bold;
+}
+
+/* strikethrough */
+.mc-code-m {
+    text-decoration: line-through;
+}
+
+/* underline */
+.mc-code-n {
+    text-decoration: underline;
+}
+
+/* italic */
+.mc-code-o {
+    font-style: italic;
+}
