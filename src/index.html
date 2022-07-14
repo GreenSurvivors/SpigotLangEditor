@@ -5,31 +5,34 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/milligram.min.css">
         <link rel="stylesheet" href="css/sle.css">
+        <link rel="stylesheet" type="text/css" href="css/codemirror/codemirror.css">
+        <link rel="stylesheet" type="text/css" href="css/codemirror/theme/cobalt.css">
+        <link rel="stylesheet" type="text/css" href="css/codemirror/addon/search/matchesonscrollbar.css">
+        <link rel="stylesheet" type="text/css" href="css/codemirror/addon/dialog/dialog.css">
+
     </head>
-    <body>
+    <body class="full-height">
         <header>
-            <h1>Spigot Language File Editor</h1>
+            <div class="wrapper">
+                <h1>Spigot Language File Editor</h1>
+            </div>
         </header>
 
-        <!-- <div class="container"> -->
-            <div class="row">
-                <div class="column column-50">
-                    <form>
-                        <fieldset>
-                            <textarea placeholder="paste your config here" id="config-field"></textarea>
-                            <button type="button" class="button" id="preview-btn">Preview</button>
-                        </fieldset>
+        <div class="wrapper full-height">
+            <div class="row full-height">
+                <div class="column column-50 full-height">
+                    <form class="full-height">
+                        <textarea placeholder="paste your config here" id="config-field" class="full-height"></textarea>
+                        <label for="showKeys">
+                                <input type="checkbox", id="showKeys" name="showKeys" value="showKeys" checked>Show keys
+                        </label>
                     </form>
                 </div>
-                <div class="column column-50">
-                    <div id="preview">
-
-                    </div>
+                <div class="column column-50 full-height">
+                    <div id="preview" class="full-height"></div>
                 </div>
             </div>
-        <!-- </div> -->
-
+        </div>
     </body>
-    <script src="js/sle.js"></script>
-
+    <script type="module" src="js/sle.js"></script>
 </html>

@@ -1,9 +1,56 @@
-#config-field {
-    height: 20rem;
+@font-face {
+    font-family: minecraft;
+    src: url('/font/Minecraftia-Regular.ttf');
+}
+
+html {
+    height: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+body {
+    background-color: #0b0420;
+    color: #d0d0d0;
+}
+
+header {
+    background-color: #464646;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    padding: 1rem 0;
+}
+
+.wrapper {
+    padding: 0 1rem;
+    height: calc(100% - 14rem);
+}
+
+.full-height > .CodeMirror {
+    height: 100%;
+}
+
+input[type='checkbox'] {
+    margin-right: 1rem;
 }
 
 #preview {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #002240;
+    overflow: auto;
+    padding: 0.2rem;
+}
+
+#preview > h5 {
+    font-style: italic;
+    margin-bottom: 0rem;
+}
+
+.minecraft-font {
+    font-family: minecraft;
 }
 
 /* bukkit formats */
