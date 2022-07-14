@@ -46,22 +46,28 @@ function refreshPreview() {
     let preview = document.querySelector('#preview');
     let showKeysCheckbox = document.querySelector('#showKeys');
 
-    let config = jsyaml.load(editor.getValue());
+    try {
+        let config = jsyaml.load(editor.getValue());
+        let map = flattenObjectToMap(config);
 
-    let map = flattenObjectToMap(config);
-
-    const showKeys = showKeysCheckbox.checked;
-
-    let output = "";
-
-    for (var key in map) {
-        if (showKeys === true) {
-            output += `<h5>${key}</h5>`;
+        const showKeys = showKeysCheckbox.checked;
+    
+        let output = "";
+    
+        for (var key in map) {
+            if (showKeys === true) {
+                output += `<h5>${key}</h5>`;
+            }
+            let value = colorizeMinecraft(map[key]);
+            value = value.replace(/(?:\r\n|\r|\n)/g, '<br>');
+            output += `<p class="minecraft-font">${value}</p>`
         }
-        let value = colorizeMinecraft(map[key]);
-        output += `<p class="minecraft-font">${value}</p>`
+        preview.innerHTML = output;   
+    } catch (error) {
+        let errorHtml = `<pre class="error"><h2 class="error">${error.name}</h2><code>${error.message}</code></pre>`;
+        errorHtml = errorHtml.replace(/(?:\r\n|\r|\n)/g, '<br>');
+        preview.innerHTML = errorHtml;
     }
-    preview.innerHTML = output;   
 }
 
 /**

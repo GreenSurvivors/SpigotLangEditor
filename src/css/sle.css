@@ -49,6 +49,18 @@ input[type='checkbox'] {
     margin-bottom: 0rem;
 }
 
+pre.error {
+    border-left-color: #d11717;
+}
+
+pre, code {
+    background:#0b0420;
+}
+
+pre>h2 {
+    padding: 0rem 1.5rem;
+}
+
 .minecraft-font {
     font-family: minecraft;
 }

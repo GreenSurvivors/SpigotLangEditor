@@ -49,6 +49,18 @@ input[type='checkbox'] {
     margin-bottom: 0rem;
 }
 
+pre.error {
+    border-left-color: #d11717;
+}
+
+pre, code {
+    background:#0b0420;
+}
+
+pre>h2 {
+    padding: 0rem 1.5rem;
+}
+
 .minecraft-font {
     font-family: minecraft;
 }
@@ -135,10 +147,7 @@ input[type='checkbox'] {
     color: #ffffff;
 }
 
-<<<<<<< HEAD
 /* default/reset */
-=======
->>>>>>> 48e2924eed791a61a22f457851a5534704d5a5e3
 .minecraft-color, .mc-code-r {
     color: #ffffff;
     font-weight: normal;
