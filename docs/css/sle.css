@@ -1,6 +1,7 @@
 @font-face {
     font-family: minecraft;
-    src: url('../font/Minecraftia-Regular.ttf');
+    /* src: url('../font/Minecraftia-Regular.ttf'); */
+    src: url('../font/MinecraftRegular.ttf');
 }
 
 html {
@@ -153,6 +154,7 @@ pre>h2 {
     font-weight: normal;
     font-style: normal;
     text-decoration: none;
+    display: inline-block;
 }
 
 /* bold */
@@ -163,11 +165,13 @@ pre>h2 {
 /* strikethrough */
 .mc-code-m {
     text-decoration: line-through;
+    text-decoration-thickness: 0.2rem;
 }
 
 /* underline */
 .mc-code-n {
     text-decoration: underline;
+    text-decoration-thickness: 0.2rem;
 }
 
 /* italic */

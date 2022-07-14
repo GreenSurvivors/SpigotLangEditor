@@ -86,6 +86,8 @@ function colorizeMinecraft(string) {
         string += "</span>";
     }
 
+    count = 0;
+
     string = string.replace(/&([l-or])/ig, function(match, p1) {
         count++;
         return `<span class=\"mc-code-${p1}\">`;
