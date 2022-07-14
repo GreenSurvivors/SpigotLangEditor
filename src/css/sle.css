@@ -1,6 +1,6 @@
 @font-face {
     font-family: minecraft;
-    src: url('./font/Minecraftia-Regular.ttf');
+    src: url('../font/Minecraftia-Regular.ttf');
 }
 
 html {
