@@ -58,7 +58,10 @@ function refreshPreview() {
             if (showKeys === true) {
                 output += `<h5>${key}</h5>`;
             }
-            let value = colorizeMinecraft(map[key]);
+            let value = map[key]
+            if (typeof map[key] === 'string' || map[key] instanceof String) {
+                value = colorizeMinecraft(map[key]);
+            }
             value = value.replace(/(?:\r\n|\r|\n)/g, '<br>');
             output += `<p class="minecraft-font">${value}</p>`
         }
